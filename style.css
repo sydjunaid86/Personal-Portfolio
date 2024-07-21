@@ -200,7 +200,12 @@ header{
     transition: all 0.3s ease 0s;
 }
 @media only screen and (max-width: 700px) {
-
+ .my-logo{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    transition: all .5s;
+}
   .sidebar-content{
     margin-top: 28px;
   }
@@ -243,8 +248,7 @@ header{
   animation: fadeIn 3s ;
 }
 @media only screen and (max-width: 400px) {
-  .my-logo{
-    font-size: 20px;
+
 }
 /*About Section*/
 
