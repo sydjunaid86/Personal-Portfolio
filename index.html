@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junaid Shah | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="images/junaid3.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top nav-menu">
+      <a href="#" class="navbar-brand text-weight-bold text-uppercase my-logo"
+        >JUNAID</a
+      >
+      <ul class="custom-navbar ml-auto mr-lg-5 mr-md-5 mr-sm-4">
+        <li class="nav-item">
+          <a
+            class="nav-link menu-item"
+            href="https://www.linkedin.com/in/junaidshahcoder"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-item" 
+          href="https://www.twitter.com/sydjunaid86" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link menu-item"
+            href="https://www.instagram.com/sydjunaid86"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-item" href="https://www.youtube.com/@JHOfficial1" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+      <button
+        type="button"
+        id="my-nav-btn"
+        class="nav-button"
+        onclick="openNav()"
+      >
+        <div class="bg-light line1"></div>
+        <div class="bg-light line2"></div>
+        <div class="bg-light line3"></div>
+      </button>
+      <div class="page-list fixed-right mx-4">
+        <ul>
+          <!-- <li><a href="#"><i class="fas fa-arrow-circle-up"></i></a></li> -->
+          <li><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <path d="M12 17H12.009" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M20 8.5V13.5C20 17.2712 20 19.1569 18.8284 20.3284C17.6569 21.5 15.7712 21.5 12 21.5C8.22876 21.5 6.34315 21.5 5.17157 20.3284C4 19.1569 4 17.2712 4 13.5V8.5" stroke="currentColor" stroke-width="1.5" />
+            <path d="M22 10.5L17.6569 6.33548C14.9902 3.77849 13.6569 2.5 12 2.5C10.3431 2.5 9.00981 3.77849 6.34315 6.33548L2 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg></a></li>
+          <li><a href="#about"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <path d="M18.6161 20H19.1063C20.2561 20 21.1707 19.4761 21.9919 18.7436C24.078 16.8826 19.1741 15 17.5 15M15.5 5.06877C15.7271 5.02373 15.9629 5 16.2048 5C18.0247 5 19.5 6.34315 19.5 8C19.5 9.65685 18.0247 11 16.2048 11C15.9629 11 15.7271 10.9763 15.5 10.9312" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M4.48131 16.1112C3.30234 16.743 0.211137 18.0331 2.09388 19.6474C3.01359 20.436 4.03791 21 5.32572 21H12.6743C13.9621 21 14.9864 20.436 15.9061 19.6474C17.7889 18.0331 14.6977 16.743 13.5187 16.1112C10.754 14.6296 7.24599 14.6296 4.48131 16.1112Z" stroke="currentColor" stroke-width="1.5" />
+            <path d="M13 7.5C13 9.70914 11.2091 11.5 9 11.5C6.79086 11.5 5 9.70914 5 7.5C5 5.29086 6.79086 3.5 9 3.5C11.2091 3.5 13 5.29086 13 7.5Z" stroke="currentColor" stroke-width="1.5" />
+        </svg></a></li>
+          <li><a href="#skills"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <path d="M7 4.5C5.34315 4.5 4 5.84315 4 7.5C4 8.06866 4.15822 8.60037 4.43304 9.0535C3.04727 9.31855 2 10.537 2 12C2 13.463 3.04727 14.6814 4.43304 14.9465M7 4.5C7 3.11929 8.11929 2 9.5 2C10.8807 2 12 3.11929 12 4.5V19.5C12 20.8807 10.8807 22 9.5 22C8.11929 22 7 20.8807 7 19.5C5.34315 19.5 4 18.1569 4 16.5C4 15.9313 4.15822 15.3996 4.43304 14.9465M7 4.5C7 5.31791 7.39278 6.04408 8 6.50018M4.43304 14.9465C4.78948 14.3588 5.34207 13.9032 6 13.6707" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M17 19.5C18.6569 19.5 20 18.1569 20 16.5C20 15.9313 19.8418 15.3996 19.567 14.9465C20.9527 14.6814 22 13.463 22 12C22 10.537 20.9527 9.31855 19.567 9.0535M17 19.5C17 20.8807 15.8807 22 14.5 22C13.1193 22 12 20.8807 12 19.5L12 4.5C12 3.11929 13.1193 2 14.5 2C15.8807 2 17 3.11929 17 4.5C18.6569 4.5 20 5.84315 20 7.5C20 8.06866 19.8418 8.60037 19.567 9.0535M17 19.5C17 18.6821 16.6072 17.9559 16 17.4998M19.567 9.0535C19.2105 9.64121 18.6579 10.0967 18 10.3293" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></a></li>
+          <li><a href="#services"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <path d="M20 14.5V6.5C20 4.61438 20 3.67157 19.4142 3.08579C18.8284 2.5 17.8856 2.5 16 2.5H8C6.11438 2.5 5.17157 2.5 4.58579 3.08579C4 3.67157 4 4.61438 4 6.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3.49762 15.5154L4.01953 14.5H19.9518L20.5023 15.5154C21.9452 18.177 22.3046 19.5077 21.7561 20.5039C21.2077 21.5 19.7536 21.5 16.8454 21.5L7.15462 21.5C4.24642 21.5 2.79231 21.5 2.24387 20.5039C1.69543 19.5077 2.05474 18.177 3.49762 15.5154Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M15.5 7L16.4199 7.79289C16.8066 8.12623 17 8.29289 17 8.5C17 8.70711 16.8066 8.87377 16.4199 9.20711L15.5 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8.5 7L7.58009 7.79289C7.19337 8.12623 7 8.29289 7 8.5C7 8.70711 7.19336 8.87377 7.58009 9.20711L8.5 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13 6L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></a></li>
+          <li><a href="#portfolio"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <path d="M14 9H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M14 12.5H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <rect x="2" y="3" width="20" height="18" rx="5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            <path d="M5 16C6.20831 13.4189 10.7122 13.2491 12 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10.5 9C10.5 10.1046 9.60457 11 8.5 11C7.39543 11 6.5 10.1046 6.5 9C6.5 7.89543 7.39543 7 8.5 7C9.60457 7 10.5 7.89543 10.5 9Z" stroke="currentColor" stroke-width="1.5" />
+        </svg></a></li>
+          <li><a href="#review"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <path d="M6.24997 10.4999C8.59718 10.4999 10.5 8.59709 10.5 6.24988C10.5 3.90267 8.59718 1.99988 6.24997 1.99988C3.90276 1.99988 1.99997 3.90267 1.99997 6.24988C1.99997 8.59709 3.90276 10.4999 6.24997 10.4999Z" stroke="currentColor" stroke-width="1.5" />
+            <path d="M17.75 21.9999C20.0972 21.9999 22 20.0971 22 17.7499C22 15.4027 20.0972 13.4999 17.75 13.4999C15.4028 13.4999 13.5 15.4027 13.5 17.7499C13.5 20.0971 15.4028 21.9999 17.75 21.9999Z" stroke="currentColor" stroke-width="1.5" />
+            <path d="M6.24997 21.9999C8.59718 21.9999 10.5 20.0971 10.5 17.7499C10.5 15.4027 8.59718 13.4999 6.24997 13.4999C3.90276 13.4999 1.99997 15.4027 1.99997 17.7499C1.99997 20.0971 3.90276 21.9999 6.24997 21.9999Z" stroke="currentColor" stroke-width="1.5" />
+            <path d="M20.8683 2.43897L21.5607 3.13134C22.1465 3.71712 22.1465 4.66687 21.5607 5.25266L17.9333 8.94832C17.6479 9.23367 17.2829 9.42603 16.8863 9.50012L14.6381 9.98817C14.2832 10.0652 13.9671 9.75005 14.0431 9.39488L14.5216 7.15956C14.5957 6.76287 14.7881 6.39787 15.0734 6.11252L18.747 2.43897C19.3328 1.85319 20.2825 1.85319 20.8683 2.43897Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></a></li>
+          <li><a href="#blog"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <path d="M12.5294 2C16.5225 2 18.519 2 19.7595 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.7595 20.8284C18.519 22 16.5225 22 12.5294 22H11.4706C7.47751 22 5.48098 22 4.24049 20.8284C3 19.6569 3 17.7712 3 14L3 10C3 6.22876 3 4.34315 4.24049 3.17157C5.48098 2 7.47752 2 11.4706 2L12.5294 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M8 7H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M8 17H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg></a></li>
+          <li><a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <path d="M9.1585 5.71223L8.75584 4.80625C8.49256 4.21388 8.36092 3.91768 8.16405 3.69101C7.91732 3.40694 7.59571 3.19794 7.23592 3.08785C6.94883 3 6.6247 3 5.97645 3C5.02815 3 4.554 3 4.15597 3.18229C3.68711 3.39702 3.26368 3.86328 3.09497 4.3506C2.95175 4.76429 2.99278 5.18943 3.07482 6.0397C3.94815 15.0902 8.91006 20.0521 17.9605 20.9254C18.8108 21.0075 19.236 21.0485 19.6496 20.9053C20.137 20.7366 20.6032 20.3131 20.818 19.8443C21.0002 19.4462 21.0002 18.9721 21.0002 18.0238C21.0002 17.3755 21.0002 17.0514 20.9124 16.7643C20.8023 16.4045 20.5933 16.0829 20.3092 15.8362C20.0826 15.6393 19.7864 15.5077 19.194 15.2444L18.288 14.8417C17.6465 14.5566 17.3257 14.4141 16.9998 14.3831C16.6878 14.3534 16.3733 14.3972 16.0813 14.5109C15.7762 14.6297 15.5066 14.8544 14.9672 15.3038C14.4304 15.7512 14.162 15.9749 13.834 16.0947C13.5432 16.2009 13.1588 16.2403 12.8526 16.1951C12.5071 16.1442 12.2426 16.0029 11.7135 15.7201C10.0675 14.8405 9.15977 13.9328 8.28011 12.2867C7.99738 11.7577 7.85602 11.4931 7.80511 11.1477C7.75998 10.8414 7.79932 10.457 7.90554 10.1663C8.02536 9.83828 8.24905 9.56986 8.69643 9.033C9.14586 8.49368 9.37058 8.22402 9.48939 7.91891C9.60309 7.62694 9.64686 7.3124 9.61719 7.00048C9.58618 6.67452 9.44362 6.35376 9.1585 5.71223Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg></a></li>
+        </ul>
+      </div>
+      <!--Sidebar-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="sidebar-img">
+        </div>
+
+        <div class="sidebar-content text-uppercase">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#review">Review</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="my-copyright">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Banner-->
+
+    <header id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="text-light banner">
+              <p class="text-uppercase">Hi, There!</p>
+              <h1 class="banner-heading text-uppercase">
+                I'm <span>Junaid Shah</span>
+              </h1>
+              <p class="banner-para">
+                I'm a professional web developer, I have 1 year of hand on
+                expereince of working in Web Development field. My expertise are
+                in React Js, Node Js, Express Js and Mongo db
+              </p>
+              <div class="banner-btn mt-3">
+                <a href="#">Hire Me</a>
+                <a href="images/Junaid Hassan Shah.pdf" target="_blank">
+                  Download My CV</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="banner-image">
+              <img src="images/" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section-->
+
+    <section class="about hidden" id="about">
+      <div class="container">
+        <div class="row align-items-center animatefadin about-content">
+          <div class="col-lg-7 text-white about-text">
+            <h1>About Me</h1>
+            <div class="underline1 mb-4"></div>
+            <p class="lead">
+              Innovative, a dedicated and results-driven web developer with a
+              keen eye for detail and a commitment to creating seamless,
+              user-friendly websites. With 1+ years of hands-on experience in
+              the ever-evolving field of web development. I am proficient in a
+              variety of programming languages, including HTML5, CSS3,
+              JavaScript, and have a strong foundation in front-end and back-end
+              technologies. My expertise extends to popular frameworks such as
+              React and Angular, ensuring dynamic and responsive user
+              interfaces. I'm also well-versed in server-side languages like
+              Node.js and have experience working with databases, including
+              MySQL and MongoDB.
+            </p>
+            <p class="lead1 text-uppercase mb-5">
+              <i class="far fa-gem mx-2"></i> My Code is Always High Quality.
+            </p>
+            <a href="#" class="mx-4"> Become My Client</a>
+          </div>
+          <div class="col-lg-5 text-center about-img">
+            <img
+              src="images/junaid1.jpg"
+              alt="camera"
+              width="450px"
+              class="img-fluid person-img"
+            />
+            <h2 class="text-white my-4">1+ Year of Expereince</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section-->
+
+    <section class="skills" id="skills">
+      <div class="container animatefadin">
+        <div class="row align-items-center ">
+          <div class="col-12 text-white about-text">
+            <h1>My Skills</h1>
+            <div class="underline1 mb-4"></div>
+          </div>
+        </div>
+        <div class="row m-2 ">
+          <div class="col-lg-3 d-flex align-items-center justify-content-center skills-card-area">
+            <div class="custom-card">
+              <div class=" custom-body text-center">
+                <img src="images/html1.png" alt="">
+                <h2>HTML</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center justify-content-center skills-card-area">
+            <div class="custom-card">
+              <div class=" custom-body text-center">
+                <img src="images/css.png"alt="">
+                <h2>CSS</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center justify-content-center skills-card-area">
+            <div class="custom-card">
+              <div class=" custom-body text-center">
+                <img src="images/javascript.png" alt="">
+                <h2>JAVASCRIPT</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center justify-content-center skills-card-area">
+            <div class="custom-card">
+              <div class=" custom-body text-center">
+                <img src="images/bootstrap.png" alt="">
+                <h2>BOOTSTRAP</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-2 mt-4">
+          <div class="col-lg-3 d-flex align-items-center justify-content-center skills-card-area">
+            <div class="custom-card">
+              <div class=" custom-body text-center">
+                <img src="images/react.png" width="100px" alt="">
+                <h2>REACT JS</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center justify-content-center skills-card-area">
+            <div class="custom-card">
+              <div class=" custom-body text-center">
+                <img src="images/nodejs.png"alt="">
+                <h2>NODE JS</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center justify-content-center skills-card-area">
+            <div class="custom-card">
+              <div class=" custom-body text-center">
+                <img src="images/mongo.png" alt="">
+                <h2>MONGO DB</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center justify-content-center skills-card-area">
+            <div class="custom-card">
+              <div class=" custom-body text-center">
+                <img src="images/photoshop.png" alt="">
+                <h2>PHOTOSHOP</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="row mt-4 text-center">
+          <hr>
+          <div class="col-12">
+            <div class="skill-text" >
+              <p>
+                Experienced web developer proficient in HTML, CSS, JavaScript, Bootstrap, React.js, Node.js, MongoDB, and Adobe Photoshop. Skilled in creating dynamic, responsive web applications with a focus on user experience and performance. Adept at both front-end and back-end development, delivering high-quality, visually appealing, and scalable solutions.</p>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </section>
+    <!--Services-->
+    <section class="services p-4" id="services">
+      <div class="container animatefadin">
+        <div class="row align-items-center about-content">
+          <div class="col-12 text-white about-text">
+            <h1>Services</h1>
+            <div class="underline1 mb-4"></div>
+          </div>
+        </div>
+      <div class="row text-white text-center m-4">
+        <div class="col-lg-4 col-md-3 skills-card-area ">
+          <div class="service-card">
+            <div class="service-hex"><i class="fa fa-briefcase text-white"></i></div>
+            <div class="service-inner">
+              <h3>Unique design</h3>
+              <p>Lorem Ipsum is simpely dummy texxt of the prisnting and typesetting industry. Lorem Ipsum has ben thes industry.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 skills-card-area">
+          <div class="service-card">
+            <div class="service-hex"><i class="fa fa-cube"></i></div>
+            <div class="service-inner">
+              <h3>Different Layout</h3>
+              <p>Lorem Ipssum is simply dummy text of the printng and typeseting indusrtry. Liorem Iipsum has ben thes induestry.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 skills-card-area">
+          <div class="service-card">
+            <div class="service-hex"><i class="fa fa-database"></i></div>
+          <div class="service-inner">
+            <h3>Make it Database</h3>
+            <p>Lorim Ipsam is simpxy dumxy taxt of the prxnting and typssetting industery. Loram Ipsom hos been the indusetry.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-white text-center m-4">
+        <div class="col-lg-4 col-md-3 skills-card-area ">
+          <div class="service-card">
+            <div class="service-hex"><i class="fa fa-laptop"></i></div>
+          <div class="service-inner">
+            <h3>Responsiveness</h3>
+            <p>Lorxm Ipsvm is simpiy dvmmy taxt of the pronting and typetting indusstry. Lorem Ipsum has been the indusstry.</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 skills-card-area">
+          <div class="service-card">
+            <div class="service-hex"><i class="fa fa-bug"></i></div>
+          <div class="service-inner">
+            <h3>Testing for Perfection</h3>
+            <p>Loram Ipsnm ns simpny duxmmy text of the printding and typstting industrys. Lorem Ipsum has been the idndustry.</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 skills-card-area">
+          <div class="service-card">
+            <div class="service-hex"><i class="fa fa-file"></i></div>
+            <div class="service-inner">
+              <h3>Make it Simple</h3>
+              <p>Lxrem Ipsum is sismply dummy text of the prindting and typeseltting induistry. Lorem Ipsum has been the industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--Portfolio-->
+    
+  <section class="portfolio p-4" id="portfolio">
+    <div class="container animatefadin">
+      <!-- title -->
+      <div class="row align-items-center about-content">
+        <div class="col-12 text-white about-text">
+          <h1>Portfolio</h1>
+          <div class="underline1 mb-4"></div>
+        </div>
+      </div>
+      <!-- end of title -->
+      <ul class="list-inline text-center text-uppercase font-weight-bold my-4">
+        <li class="list-inline-item gallery-list-item active-item" data-filter="all">All<span class="mx-md-5 mx-3 text-muted">|</span>
+        </li>
+        <li class="list-inline-item gallery-list-item" data-filter="new">New<span class="mx-md-5 mx-3 text-muted">|</span>
+        </li>
+        <li class="list-inline-item gallery-list-item" data-filter="free">Free<span class="mx-md-5 mx-3 text-muted">|</span>
+        </li>
+        <li class="list-inline-item gallery-list-item" data-filter="pro">Pro
+        </li>
+      </ul>
+      <div class="container-fluid">
+        <div class=" folio-items d-flex flex-wrap justify-content-center text-center text-white">
+          <div class="filter new"><img src="images/item-1.jpg" width="300"><h2>Food Delivery</h2></div>
+          <div class="filter free"><img src="images/item-2.jpg" width="300"><h2>E-Commerece</h2></div>
+          <div class="filter pro"><img src="images/item-3.jpg" width="300"><h2>Resturant Reservation</h2></div>
+          <div class="filter new"><img src="images/item-4.jpg" width="300"><h2>Photography Website</h2></div>
+          <div class="filter pro"><img src="images/item-6.jpg" width="300"><h2>Hospital Management</h2></div>
+          <div class="filter free"><img src="images/item-5.jpg" width="300"><h2>Netflix clones</h2></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of Portfolio -->
+   <!--Review-->
+   <section class="review p-4" id="review">
+    <div class="container animatefadin">
+      <div class="row align-items-center about-content">
+        <div class="col-12 text-white about-text">
+          <h1>Reviews</h1>
+          <div class="underline1 mb-4"></div>
+        </div>
+      </div>
+    <div class="row text-white text-center m-4">
+      <div class="col-lg-4 col-md-3 skills-card-area ">
+        <div class="test-box">
+          <div class="client-img">
+            <img src="./images/clients.png" />
+          </div>
+          <h4>Daniel Sams</h4>
+          <h5>UI Lead, Coca-Cola</h5>
+          <q> Hello Everyone, Junaid Shah has good skills in Web Designing as well as frontend development. </q>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 skills-card-area">
+        <div class="test-box">
+          <div class="client-img">
+            <img src="./images/clients.png" />
+          </div>
+          <h4>Martin Paul</h4>
+          <h5>Tech Head, Austin Max</h5>
+          <q> Junaid Shah creates very clean designs, Also good knowledge of development.. </q>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 skills-card-area">
+        <div class="test-box">
+          <div class="client-img">
+            <img src="./images/clients.png" />
+          </div>
+          <h4>Kristina</h4>
+          <h5>Project head, Trends Solution</h5>
+          <q> I gave worked to Junaid Shah it handles the project very easily. Gives all Star to Junaid.</q>
+        </div>
+      </div>
+    </div>
+    <div class="row text-white text-center m-4">
+      <div class="col-lg-4 col-md-3 skills-card-area ">
+        <div class="test-box">
+          <div class="client-img">
+            <img src="./images/clients.png" />
+          </div>
+          <h4>Chirs Folly</h4>
+          <h5>Design Team, Alexes Corp.</h5>
+          <q> Good knowledge of Designing nice to work with Junaid. Good Work and thanks for your solutions. </q>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 skills-card-area">
+        <div class="test-box">
+          <div class="client-img">
+            <img src="./images/clients.png" />
+          </div>
+          <h4>Micheal Clarke</h4>
+          <h5>UI Lead, Puma</h5>
+          <q> Hello Everyone, Junaid Shah has good skills in Web development. </q>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 skills-card-area">
+        <div class="test-box">
+          <div class="client-img">
+            <img src="./images/clients.png" />
+          </div>
+          <h4>Steven Smith</h4>
+          <h5>Senior Web developer, Pepsi</h5>
+          <q> Junaid Shah has good skills in Web Designing as well as frontend development. </q>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--Review Ended-->
+  <!--Blog Section-->
+  <section class="blog p-4" id="blog">
+    <div class="container animatefadin">
+      <div class="row align-items-center about-content">
+        <div class="col-12 text-white about-text">
+          <h1>Blogs</h1>
+          <div class="underline1 mb-4"></div>
+        </div>
+      </div>
+    <div class="row text-white text-center m-4">
+      <div class="col-lg-4 col-md-3 skills-card-area ">
+        <div class="blog-box">
+          <div class="blog-img blog-img1">
+          </div>
+          <h2>JavaScript Learning</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae harum enim tempore quaerat quo... </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 skills-card-area ">
+        <div class="blog-box">
+          <div class="blog-img blog-img2">
+          </div>
+          <h2>Python Learning</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae harum enim tempore quaerat quo... </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 skills-card-area ">
+        <div class="blog-box">
+          <div class="blog-img blog-img3">
+          </div>
+          <h2>PHP Learning</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae harum enim tempore quaerat quo... </p>
+        </div>
+      </div>
+    </div>
+    <div class="row text-white text-center m-4">
+      <div class="col-lg-4 col-md-3 skills-card-area ">
+        <div class="blog-box">
+          <div class="blog-img blog-img4">
+          </div>
+          <h2>Node Js Learning</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae harum enim tempore quaerat quo... </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 skills-card-area ">
+        <div class="blog-box">
+          <div class="blog-img blog-img5">
+          </div>
+          <h2>Mongo db Learning</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae harum enim tempore quaerat quo... </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 skills-card-area ">
+        <div class="blog-box">
+          <div class="blog-img blog-img6">
+          </div>
+          <h2>Deployment Learning</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae harum enim tempore quaerat quo... </p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!--Contactr Us-->
+  <section class="contact p-4" id="contact">
+    <div class="container animatefadin">
+      <div class="row align-items-center about-content">
+        <div class="col-12 text-white about-text">
+          <h1>Contact Me</h1>
+          <div class="underline1 mb-4"></div>
+        </div>
+      </div>
+      <div class="container-bg ">
+    <div class="row text-white text-center m-4">
+      <div class="col-lg-4 col-md-3 col-12 ">
+        <div class="contact-box">
+          <div class="contact-left">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-right">
+            <h2>My Email</h2>
+          <p> syedjunaid2794@gmail.com </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 col-12 ">
+        <div class="contact-box">
+          <div class="contact-left">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-right">
+            <h2>My Number</h2>
+          <p> +923425827586 </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-3 col-12 ">
+        <div class="contact-box">
+          <div class="contact-left">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-right">
+            <h2> Address</h2>
+          <p>Chiniot, Street 3 </p>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+    <div class="row  text-white text-center m-4">
+  <!-- Contact Form Starts -->
+  <div class="col-12 col-lg-12 p-4 ">
+    <form class="contactform" method="post" action="">
+        <div class="contactform">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <input type="text" name="name" placeholder="YOUR NAME">
+                </div>
+                <div class="col-12 col-md-4">
+                    <input type="email" name="email" placeholder="YOUR EMAIL">
+                </div>
+                <div class="col-12 col-md-4">
+                    <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                </div>
+                <div class="col-12">
+                    <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                    <button type="submit" class="btn btn-contact">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Contact Form Ends -->
+   
+    </div>
+  
+  </div>
+    </div>
+  </section>
+  <!--Blog Ended-->
+<!--Iam Using Hugeicons-->
+    <!--
+<script color="255,255,255" 
+  opacity='1' 
+  zIndex="2" 
+  count="120" src="canvas-nest.js"></script> -->
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+    <script src="animation/particles.js"></script> 
+ <script src="animation/app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
