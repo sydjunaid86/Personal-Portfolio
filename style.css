@@ -204,13 +204,13 @@ header{
     transition: all .5s;
 }
 .line1, .line3{
-  width: 16px;
+  width: 14px;
   height: 2px;
   margin: 5px;
   transition: all .5s;
 }
 .line2{
-  width: 10px;
+  width: 8px;
   height: 2px;
   margin-left: 11px;
   transition: all .5s;
