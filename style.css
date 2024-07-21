@@ -24,10 +24,7 @@ header{
     background-size: cover;
     /* background-attachment: fixed; */
 }
-@media only screen and (max-width: 400px) {
-  .my-logo{
-    font-size: 10px;
-}
+
 }
 /*Navbar*/
 
@@ -244,6 +241,10 @@ header{
 }
 .animatefadin{
   animation: fadeIn 3s ;
+}
+@media only screen and (max-width: 400px) {
+  .my-logo{
+    font-size: 20px;
 }
 /*About Section*/
 
