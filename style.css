@@ -24,8 +24,6 @@ header{
     background-size: cover;
     /* background-attachment: fixed; */
 }
-
-}
 /*Navbar*/
 
 .my-logo{
@@ -171,7 +169,6 @@ header{
  display: flex;
  flex-direction: column;
  justify-content: center;
- animation: fadeIn 3s ;
 }
 .banner p, .banner-heading, .banner-btn{
   transform: translateX(180px);
@@ -205,6 +202,25 @@ header{
     font-weight: bold;
     color: #fff;
     transition: all .5s;
+}
+.line1, .line3{
+  width: 16px;
+  height: 2px;
+  margin: 5px;
+  transition: all .5s;
+}
+.line2{
+  width: 10px;
+  height: 2px;
+  margin-left: 11px;
+  transition: all .5s;
+}
+.menu-item{
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #eee;
+  padding: 10px;
+  transition: color .5s;
 }
   .sidebar-content{
     margin-top: 28px;
@@ -244,12 +260,7 @@ header{
 }
 
 }
-.animatefadin{
-  animation: fadeIn 3s ;
-}
-@media only screen and (max-width: 400px) {
 
-}
 /*About Section*/
 
 .about{
@@ -645,14 +656,6 @@ margin-top: 10px;
     top: 18vh;
     right: 0;
     width: 35px;
-  }
-}
-@keyframes fadeIn {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
   }
 }
   /*
